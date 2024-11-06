@@ -1,0 +1,74 @@
+$color-dark: #080808
+$color-gray: #444242
+    
+    
+    
+        
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box 
+
+
+
+ol, ul , a 
+    list-style: none
+    text-decoration: none 
+
+    
+button,
+input 
+  overflow: visible
+
+a,
+button,
+input,
+textarea,
+svg *
+  transition-duration: .2s ease 
+
+html
+    font-size: 62.5%
+body 
+
+  line-height: 1.1
+  background-color: $color-dark
+  font-family: "Nunito", sans-serif
+
+a 
+    color: $color-gray
+
+.container
+    max-width: 110rem
+    padding-left: 1rem 
+    padding-right: 1rem
+    margin: 0 auto
+
+
+@mixin hover 
+    @media ( hover: hover )
+        &:hover
+            @content
+    @media (hover: none )
+        &:active
+            @content
+$Desktop: 1200px
+$tablet:  1002px 
+$tabletSmol: 866px
+$mobile: 760px
+
+@mixin Desktop
+  @media (max-width: $Desktop)
+    @content
+@mixin tablet
+  @media (max-width: $tablet)
+    @content
+@mixin mobile
+    @media  ( max-width: $mobile  )
+        @content
+    
+@mixin tabletSmol
+    @media  ( max-width: $tabletSmol )
+       @content 
+    
+      

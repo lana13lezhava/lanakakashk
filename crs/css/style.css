@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol, ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: 0.2s ease;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.1;
+  background-color: #080808;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  color: #444242;
+}
+
+.container {
+  max-width: 110rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 1.2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 6rem;
+  align-items: center;
+  padding-inline: 3.2rem;
+}
+@media (max-width: 1002px) {
+  .header {
+    column-gap: 3rem;
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    padding-inline: 1rem;
+  }
+}
+
+.header-logo {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+}
+
+.header-menu-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem;
+  align-items: center;
+}
+
+.header-menu-link {
+  color: #696868;
+  cursor: pointer;
+  font-size: 2.1rem;
+  font-weight: 400;
+  transition-duration: 0.2s;
+}
+.header-menu-link:hover {
+  color: white;
+}
+
+.button {
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #797474;
+  color: white;
+  padding: 1rem 1.3rem;
+  border-radius: 3rem;
+  white-space: nowrap;
+}
+.button:hover {
+  background-color: #a7a2a2;
+}
+
+.content-header {
+  margin-bottom: 8rem;
+}
+
+.contentheader-text {
+  color: white;
+  font-size: 3rem;
+  margin: 0;
+  margin-left: 8rem;
+}
+
+.content-header-title {
+  display: inline-block;
+  font-weight: 700;
+  color: white;
+  font-size: 16vw;
+  line-height: 1;
+  margin: 0;
+}
+
+.motivation-item:nth-child(even) {
+  background-color: #444242;
+}
+
+.motivation-item:nth-child(even) .motivation-card {
+  flex-direction: row-reverse;
+}
+
+.motivation-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: clamp(30px, 10.42vw, 200px);
+}
+
+.motivation-card-body {
+  padding-left: 3rem;
+}
+
+.motivation-card-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: white;
+}
+
+.backdrop-title-2 {
+  position: relative;
+  z-index: 2;
+}
+
+.backdrop-title-2::after {
+  content: attr(data-title);
+  font-size: 2.8em;
+  color: transparent;
+  text-stroke: 1px #0d0d0d;
+  -webkit-text-stroke: 1px #090909;
+  z-index: -1;
+  position: absolute;
+  top: -0.7em;
+  left: -0.9em;
+}
+
+.backdrop-title {
+  position: relative;
+  z-index: 2;
+}
+
+.backdrop-title::after {
+  content: attr(data-title);
+  font-size: 2.8em;
+  color: transparent;
+  text-stroke: 1px #444242;
+  -webkit-text-stroke: 1px #444242;
+  z-index: -1;
+  position: absolute;
+  top: -0.7em;
+  left: -0.9em;
+}
+
+.motivation-card-description {
+  font-size: 2.3rem;
+  max-width: 40rem;
+  color: #9b9595;
+  margin-bottom: 2rem;
+}
+
+.mativation-card-button {
+  background-color: transparent;
+  border: 1px solid #9b9595;
+  color: white;
+}
+
+.motivation-card-img {
+  margin-block: -40px;
+}
+
+.p {
+  margin-block: 0;
+}
+
+.trening-type {
+  padding-top: 7rem;
+  padding-bottom: 12rem;
+  position: relative;
+  background-color: #080808;
+  margin-inline: auto;
+}
+
+.trening-type-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8rem;
+}
+
+.trening-tipe-title {
+  color: white;
+  font-size: 3rem;
+}/*# sourceMappingURL=style.css.map */
